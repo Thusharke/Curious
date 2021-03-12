@@ -50,7 +50,7 @@ router.get("/questions/:id",function(req,res){
             console.log("SOMETHING WENT WRONG!!");
         }
         else{
-            res.render("../views/questions/show",{post : post});
+            res.render("../views/Questions/show",{post : post});
         }
     })
 }) 
