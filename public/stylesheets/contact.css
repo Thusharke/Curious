@@ -1,0 +1,100 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* body  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* CONTACT FORM  */
+
+#contact-form {
+    padding: 30px;
+}
+.nav{
+    line-height: calc(var(--header-height) + 1.5rem);
+}
+
+#contactOptions {
+    margin: 0 auto;
+    margin-top: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contactMobile {
+    border: 2px solid #069C54;
+    border-radius: .5rem;
+    padding: 50px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactMobile:hover {
+    background-color: #069C54;
+    color: white;
+}
+.contactMobile:hover .bx1{
+    color: white;
+}
+
+.contactEmail {
+    border: 2px solid #069C54;
+    border-radius: .5rem;
+    padding: 50px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactEmail:hover {
+    background-color: #069C54;
+    color: white;
+}
+.contactEmail:hover .bx1{
+    color: white;
+}
+
+.contactAddress {
+    border: 2px solid #069C54;
+    border-radius: .5rem;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactAddress:hover {
+    background-color: #069C54;
+    color: white;
+}
+.contactAddress:hover .bx1{
+    color: white;
+}
+
+
+/* ICONS STYLES  */
+.bx1 {
+    font-size: 2.9rem;
+    color: #069C54;
+}
+
+
+
+/* CONTACT FORM FONTS  */
+
+#contact-span {
+    color: #069C54;
+}
+
+
