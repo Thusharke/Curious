@@ -31,23 +31,41 @@ img{
     display: flex;
     justify-content: center;
 }
-.img-container{
-    width : 50%;
-    height : auto;
+@media screen and (min-width: 768px){
+    .img-container{
+        width : 50%;
+        height : auto;
+    }
+    .form{
+        width : 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        width : 70%;
+    }
 }
+@media screen and (max-width: 768px){
+    .img-container{
+        width : 50%;
+        height : auto;
+        display: none;
+    }
+    .form{
+        width : 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        width : 70%;
+    }
+}
+
 .back{
     width : 65%;
 }
-.form{
-    width : 35%;
-	display: flex;
-	justify-content: center;
-    align-items: center;
-}
-form{
-    width : 70%;
-}
-
 /* styles related to the form */
 .form h2{
 	margin: 0;
