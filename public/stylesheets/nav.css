@@ -95,13 +95,25 @@ body.dark-theme{
   cursor: pointer;
 }
 
-body{
-  margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
-  line-height: 1.6;
+@media screen and (min-width:800px){
+  body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+}
+@media screen and (max-width:800px){
+  body{
+    margin: 0  !important;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
 }
 
 h1,h2,h3,p,ul{

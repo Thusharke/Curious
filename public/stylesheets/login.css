@@ -121,7 +121,7 @@ img{
 }
 .form-group input:focus + label .label,
 .form-group input:valid + label .label{
-    transform: translateY(-85%);
+    transform: translateY(-78%);
     color : #057c43 !important;
     font-size: 18px;
 }
