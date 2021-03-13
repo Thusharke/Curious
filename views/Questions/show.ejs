@@ -23,9 +23,9 @@
 				<h4><%= answer.author.username %>,<span class="light"> <%- moment(answer.createdAt).fromNow() %></span></h4>
 				<p class="answer"><%= answer.Text %></p>
 				<% if(currUser && currUser.username === answer.author.username){ %>
-					<a href="/questions/<%= post._id %>/answer/<%= answer._id %>/edit">Edit</a>
+					<a href="/questions/<%= post._id %>/answer/<%= answer._id %>/edit" class="edit">Edit</a>
 					<form action="/questions/<%= post._id %>/answer/<%= answer._id %>?_method=DELETE" method="POST">
-						<button type="submit">Delete</button>
+						<button class="del" type="submit">Delete</button>
 					</form>
 				<% } %>
 			</div>

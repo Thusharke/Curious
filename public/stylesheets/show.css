@@ -42,6 +42,12 @@ h2 {
     right : 10px;
     top : -8px
 }
+.answer-box {
+    position: relative;
+}
+.answer{
+    padding-bottom: 25px;
+}
 .answer-box p {
     text-align: justify;
 }
@@ -59,4 +65,26 @@ h2 {
     display: flex;
     justify-content: space-around;
     padding: 20px 0px;
+}
+.del{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color : rgb(224, 33, 33);
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    right : 15px;
+    bottom: 5px;
+}
+.edit{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color : #069C54;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    left : 0px;
+    bottom: 5px;
 }

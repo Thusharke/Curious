@@ -14,36 +14,38 @@
     flex-direction: column;
     justify-content: center;    
     align-items: center;
-    margin: 150px;
+    width : 70%;
+    margin: 0 auto;
 }
 
-.search #heading {
-    color: #069C54;
-    font-size: 5.0rem;
-}
-
-.search input {
-    width: 90vh;
-    border: 2px solid #069C54;
-    padding: 20px 50px;
-    border-radius: 30px;
-    outline: none;
-    font-size: 1.0rem;
+#search{
+    margin-bottom: 20px;
 }
 
 
+
+
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 30px;
+}
 .button {
-    justify-content: space-around;
     text-align: center;
     background-color: #069C54;
     width: 150px;
     outline: none;
-    align-self: flex-end;
     border-radius: 30px;
     border: 2px solid #069C54;
     color: azure;
     font-size: .9rem;
-    margin: 30px 20px;
+    margin : 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .bx-search-alt-2 {
@@ -99,9 +101,65 @@
 }
 .boxes{
     margin-bottom: 20px;
+    position: relative;
 }
 .boxes .icons {
     display: flex;
     justify-content:space-between;
 } 
+
+.deleForm{
+    margin: 10px 0px;
+    background-color: #069C54;
+    width: 150px;
+    outline: none;
+    padding: 5px 0;
+    align-self: flex-end;
+    border-radius: 30px;
+    border: 2px solid #069C54;
+    color: azure;
+    display : inline;
+}
+.del{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color : rgb(224, 33, 33);
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    right : 30px;
+    bottom: 30px;
+}
+@media screen and (min-width: 768px){
+    .search #heading {
+        color: #069C54;
+        font-size: 5.0rem;
+    }
+    .search input {
+        width: 50vw;
+        border: 2px solid #069C54;
+        padding: 20px 50px;
+        border-radius: 30px;
+        outline: none;
+        font-size: 1.0rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .bx2{
+        display: none;
+    }
+    .search #heading {
+        color: #069C54;
+        font-size: 3.0rem;
+    }
+    .search input {
+        width: 90vw;
+        border: 2px solid #069C54;
+        padding: 20px 50px;
+        border-radius: 30px;
+        outline: none;
+        font-size: 1.0rem;
+    }
+}
 

@@ -6,7 +6,7 @@
     <div class="search">
         <h1 id="heading">Browse a question</h1>
         <form action="/questions/filter" method="POST">
-            <i class='bx bx-search-alt-2'></i>
+            <i class='bx2 bx bx-search-alt-2'></i>
             <input autocomplete="off" type="search" name="filter" id="search" placeholder="Search Your Query">
         </form>
         <div class="buttons">
@@ -29,7 +29,7 @@
                     <% if(currUser && currUser.username === question.author.username){ %>
                         <a href="/questions/<%= question._id %>/edit" class="edit">Edit</a>
                         <form class="delForm" action="/questions/<%= question._id %>?_method=DELETE" method="POST">
-                            <button type="submit">Delete</button>
+                            <button class="del" type="submit">Delete</button>
                         </form>
                     <% } %>
                 </div>
